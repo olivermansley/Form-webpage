@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="style.css">
 
 </head>
-<main>
+<body>
     <div id="container">
 
     
@@ -12,56 +13,56 @@
                 <h2>Thank you for taking our survey</h2>
             </header>
         </div>
-
+    <form id="survey-form">
         <div id="content">
             <div class="form-group">
                 <label for="name">Name</label>
-                <Input type="text" name="name" id="name" placeholder="Name" required>
+                <Input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="email" name="email" id="email" placeholder="Email" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="age">Age</label>
-                <input type="number" name="age" min="9" max="100" id="age">
+                <input type="number" name="age" min="9" max="100" id="age" class="form-control" placeholder="Age">
             </div>
             <div class="form-group">
-                <label for="recommend">Would you recommend Freecodecamp to a friend</label>
-                <input type="radio" name="recommend" id="yes">
+                <p>Would you recommend Freecodecamp to a friend</p>
+                <input type="radio" name="recommend" id="yes" class="input-radio" >
                 <label for="yes">Yes</label>
-                <input type="radio" name="recommend" id="maybe">
-                <label for="maybe">maybe</label>
-                <input type="radio" name="recommend" id="no">
-                <label for="no">no</label>
+                <input type="radio" name="recommend" id="maybe" class="input-radio" >
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="recommend" id="no" class="input-radio" >
+                <label for="no">No</label>
             </div>
             <div class="form-group">
-                <label for="favourite">Favourite feature of Freecodecamp</label>
-                <select name="favourite" id="favourite">
+                <p>Favourite feature of Freecodecamp</p>
+                <select name="favourite" id="favourite" class="form-control" >
                     <option value="html">HTML</option>
                     <option value="css">CSS</option>
                     <option value="javascript">Javascript</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="improve">What would you improve in Freecodecamp</label>
-                <input type="checkbox" name="html" id="html_improve">
+                <p>What would you improve in Freecodecamp</p>
+                <input type="checkbox" name="html" id="html_improve" class="input-checkbox" >
                 <label for="html_improve">HTML</label>
-                <input type="checkbox" name="css" id="css_improve">
+                <input type="checkbox" name="css" id="css_improve" class="input-checkbox" >
                 <label for="css_improve">CSS</label>
-                <input type="checkbox" name="javascript" id="javascript_improve">
+                <input type="checkbox" name="javascript" id="javascript_improve" class="input-checkbox" >
                 <label for="javascript_improve">Javascript</label>
             </div>
             <div class="form-group">
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here">
+                <p>Comments</p>
+                <textarea name="comments" id="comments" class="input-textarea" rows="4" cols="50" placeholder="Enter your comments here">
                 </textarea>
             </div>
             <div class="from-group">
-                <button type="submit" submit">
+                <input type="submit" id="submit" value="Submit Feedback">
             </div>
         </div>
 
-
+    </form>
     </div>    
-</main>
+</body>
